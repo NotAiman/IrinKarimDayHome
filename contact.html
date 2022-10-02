@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>www.irinkarimdayhome.com/about</title>
+    <link rel="icon" href="image/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/contact.css" />
+    <script src="js/index.js"></script>
+    <script src="js/contact.js"></script>
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        (function() {
+        emailjs.init('5uq7goZ5of01yjk5H');
+        })();
+    </script>
+  </head>
+  <body>
+
+    <div id="navbar">
+        <img src="image/logo.png" alt="invalid" width="200px" height="50px">
+        <div id="navbar-right">
+            <a href="index.html">Home</a>
+            <a href="contact.html" class="active">Contact</a>
+            <a href="about.html" id="about">About</a>
+            <a href="calendar.html" id="Calendar">Calendar</a>
+            <a href="feedback.html" id="Calendar">Feedback</a>
+        </div>
+    </div>
+
+    <div class="container">
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Let's get in touch</h3>
+          <p class="text">
+            Want to hear more about how to get involved? If you are interested in finding a quality day home for your child, text or call me and let's talk about your needs.
+          </p>
+
+          <div class="info">
+            <div class="information">
+              <img src="img/location.png" class="icon" alt="" />
+              <p>Ellerslie 7A Avenue SW</p>
+            </div>
+            <div class="information">
+              <img src="img/email.png" class="icon" alt="" />
+              <p>irinfahadfarshid@gmail.com</p>
+            </div>
+            <div class="information">
+              <img src="img/phone.png" class="icon" alt="" />
+              <p>(780) 721-5915</p>
+            </div>
+          </div>
+
+          <div class="social-media">
+            <p>Connect with Me:</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/irin.karim.98" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+
+          <form>
+            <h3 class="title">Contact Me</h3>
+            <div class="input-container">
+              <input type="text" name="name" class="input" id="fullname"/>
+              <label for="">Username</label>
+              <span>Username</span>
+            </div>
+            <div class="input-container">
+              <input type="email" name="email" class="input" id="email_id"/>
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+            <div class="input-container">
+              <input type="tel" name="phone" class="input" />
+              <label for="">Phone</label>
+              <span>Phone</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" class="input" id="message"></textarea>
+              <label for="">Message</label>
+              <span>Message</span>
+            </div>
+            
+          </form>
+          <button onclick="SendMail()" type="submit" value="Send" class="btn">Send</button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="footer">
+        <h3>&copy; Copyright 2022. All Rights Reserved</h3>
+        <h3>Developed by <a target="_blank">Aiman Karim</a></h3>
+        <h3>Associated with Northalta Care</h3>
+        <img src="image/northalta.jpg" alt="invalid" height="50px" width="100px">
+    </div>
+
+  </body>
+</html>

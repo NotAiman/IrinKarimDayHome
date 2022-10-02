@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.irinkarimdayhome.com/feedback</title>
+    <link rel="icon" href="image/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/feedback.css">
+    <script src="js/index.js"></script>
+    <script src="js/feedback.js"></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        (function() {
+        emailjs.init('5uq7goZ5of01yjk5H');
+        })();
+    </script>
+</head>
+<body>
+    <div id="navbar">
+        <img src="image/logo.png" alt="invalid" width="200px" height="50px">
+        <div id="navbar-right">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html" id="about">About</a>
+            <a href="calendar.html" id="Calendar">Calendar</a>
+            <a href="feedback.html" id="Calendar" class="active">Feedback</a>
+        </div>
+    </div>
+
+    <div class="header">
+        <h1>Give Your Feedback</h1>
+        <p>How Can I Make Your <b>Child's Experience </b> Better?</p> 
+        <div class="feedback">
+            <input type="Text" id="fullname" placeholder="Username" required /><br />
+            <input type="Email" id="email_id" placeholder="Email" required /><br />
+            <textarea id="message" placeholder="Feedback" required></textarea><br />
+            <button onclick="SendMail()">Send</button>
+        </div>
+    </div>
+</body>
+</html>
